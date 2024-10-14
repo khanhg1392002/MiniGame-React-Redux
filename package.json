@@ -1,0 +1,57 @@
+{
+  "name": "minigame-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@evshiron/winwheel.js": "1.0.1",
+    "@gsap/react": "^2.1.1",
+    "@reduxjs/toolkit": "^2.2.6",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "gsap": "^3.12.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "winwheel": "^1.0.1",
+    "gsap/ScrollTrigger": "^3.9.1",
+    "gsap/MotionPathPlugin": "^3.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "postcss-loader": "^8.1.1"
+  },
+  "compilerOptions": {
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
+  }
+}

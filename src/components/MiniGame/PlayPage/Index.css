@@ -1,0 +1,22 @@
+
+/* .play-page-content {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .2);
+} */
+
+
+/* .play-page-main-bottom-site {
+  height: 90vh;
+  padding-left: 200px;   
+  padding-right: 200px;  
+}  */
+
+.playgame-text {
+  font-family: 'Pacifico';
+  src: url('/src/assets/fonts/Pacifico.ttf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  color: rgb(239, 28, 36);
+  text-align: center;
+  margin: 10px;
+}

@@ -1,0 +1,131 @@
+/* ------------------------------------------- Result Game Modal ------------------------------------------- */
+/* Đường dẫn tới file font, tuỳ thuộc vào cấu trúc thư mục của dự án của bạn */
+@font-face {
+  font-family: "Pacifico";
+  src: url("/src/assets/fonts/Pacifico.ttf") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.modal-result-spin {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 7;
+  display: none;
+}
+
+.result-spin-wrapper {
+  background: url("/src/assets/img/register/Rectangle.png") no-repeat;
+  background-size: 100% 100%;
+  width: 600px;
+  height: 624px;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.result-spin-header h2 {
+  color: #222;
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* text-transform: capitalize; */
+  transform: translateY(50%);
+}
+
+.result-spin-header img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result-spin-button-close {
+  background: url("/src/assets/img/register/btn-close.png") no-repeat 50%;
+  width: 94px;
+  height: 94px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  background-size: contain;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.result-spin-button-close:hover {
+  filter: brightness(60%);
+}
+
+.prize-text {
+  color: #222;
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  /* font-weight: 400; */
+  line-height: 150px; 
+}
+
+.prize-text h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+.prize {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-top: 20px;
+  filter: drop-shadow(0 0 10px rgb(239, 28, 36));
+}
+
+.prize-image {
+  text-align: center;
+  object-fit: contain;
+  max-width: 180px;
+  max-height: 180px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px rgb(239, 28, 36));
+}
+
+.primary-button {
+  background: linear-gradient(180deg, rgb(255, 80, 80) 0%, rgb(211, 0, 0) 100%);
+  box-shadow: 2px -2px 10px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 42px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 12px solid #fff;
+  color: #fff;
+  max-width: 400px;
+}
+
+.primary-button:active {
+  transform: scale(0.98); /* Thu nhỏ thẻ khi nhấn */
+}
+

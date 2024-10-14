@@ -1,0 +1,85 @@
+/* ------------------------------------------- Result Game Modal ------------------------------------------- */
+/* Đường dẫn tới file font, tuỳ thuộc vào cấu trúc thư mục của dự án của bạn */
+@font-face {
+    font-family: "Pacifico";
+    src: url("/src/assets/fonts/Pacifico.ttf") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .modal-error-spin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 7;
+    display: none;
+  }
+  
+  .error-spin-wrapper {
+    background: url("/src/assets/img/register/Rectangle.png") no-repeat;
+    background-size: 100% 100%;
+    width: 600px;
+    height: 624px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .error-spin-header h2 {
+    color: #222;
+    text-align: center;
+    font-family: "Pacifico", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* text-transform: capitalize; */
+    transform: translateY(50%);
+
+  }
+  
+  .error-spin-header img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 10px rgb(239, 28, 36));
+  }
+
+
+  .primary-button {
+    background: linear-gradient(180deg, rgb(255, 80, 80) 0%, rgb(211, 0, 0) 100%);
+    box-shadow: 2px -2px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border-radius: 42px;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 12px solid #fff;
+    color: #fff;
+    max-width: 400px;
+  }
+  
+  .primary-button:active {
+    transform: scale(0.98); /* Thu nhỏ thẻ khi nhấn */
+  }
+  
+  

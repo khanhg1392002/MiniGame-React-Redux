@@ -1,0 +1,28 @@
+/* Reset CSS */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(221, 221, 221);
+  box-sizing: border-box;
+  background-size: cover;
+  background-image: url('/src/assets/img/general/bg-body.jpg');
+}
+
+/* Reset cho các phần tử block */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, figure, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset cho các phần tử inline */
+a, span, strong, em, b, i, u {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+

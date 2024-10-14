@@ -1,0 +1,73 @@
+/* ------------------------------------------- Countdown Modal ------------------------------------------- */
+/* Đường dẫn tới file font, tuỳ thuộc vào cấu trúc thư mục của dự án của bạn */
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../../../assets//fonts/Pacifico.ttf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.modal-count-down {
+  background-color: transparent;
+  z-index: 2;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal-count-down>span {
+  color: #222;
+  text-align: center;
+  font-family: 'Pacifico', Arial, sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.count-down-text {
+  font-family: 'Pacifico', Arial, sans-serif;
+  font-size: 240px;
+  color: #222;
+  text-align: center;
+  position: relative;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  animation: countPulse 1s infinite alternate;
+}
+
+.count-down-text::after {
+  content: attr(data-count);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.count-down-text.updating {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.count-down-text.updating::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes countPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}

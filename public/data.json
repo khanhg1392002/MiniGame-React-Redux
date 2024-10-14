@@ -1,0 +1,158 @@
+
+{
+    "productsAssetsPath": "/images/products/",
+    "charactersAssetsPath": "/images/characters/",
+    "wheelImgAssetsPath": "/images/weel/",
+
+    "wheelImg": [
+        {
+            "url": "luckymoney.png",
+            "title": "Lì Xì",
+            "color": "#FFDE00",
+            "prize": "Chúc mừng bạn trúng 2 cây vàng"
+        },
+        {
+            "url": "git.png",
+            "title": "Hộp Quà",
+            "color": "#EE0000",
+            "prize": "iphone.png"
+        },
+        {
+            "url": "message.png",
+            "title": "Lời Chúc",
+            "color": "#FFDE00",
+            "prize": "Chúc bạn may mắn lần sau!"
+        },
+        {
+            "url": "weel.png",
+            "title": "Thêm Lượt",
+            "color": "#EE0000",
+            "prize": "Bạn nhận được +1 lượt quay"
+        },
+        {
+            "url": "luckymoney.png",
+            "title": "Lì Xì",
+            "color": "#FFDE00",
+            "prize": "Chúc mừng bạn trúng 2 cây vàng"
+        },
+        {
+            "url": "git.png",
+            "title": "Hộp Quà",
+            "color": "#EE0000",
+            "prize": "iphone.png"
+        },
+        {
+            "url": "message.png",
+            "title": "Lời Chúc",
+            "color": "#FFDE00",
+            "prize": "Chúc bạn may mắn lần sau!"
+        },
+        {
+            "url": "weel.png",
+            "title": "Thêm Lượt",
+            "color": "#EE0000",
+            "prize": "Bạn nhận được thêm +1 lượt quay"
+        }
+    ],
+
+    "products": [
+        {
+            "url": "product-1.png",
+            "title": "Burberry"
+        },
+        {
+            "url": "product-2.png",
+            "title": "Lancome"
+        },
+        {
+            "url": "product-3.png",
+            "title": "Bobbi brown"
+        },
+        {
+            "url": "product-4.png",
+            "title": "Shiseido"
+        }
+    ],
+    "characters": [
+        {
+            "url": "character-1-normal.png",
+            "activeUrl": "character-1-active.png"
+        },
+        {
+            "url": "character-2-normal.png",
+            "activeUrl": "character-2-active.png"
+        },
+        {
+            "url": "character-3-normal.png",
+            "activeUrl": "character-3-active.png"
+        },
+        {
+            "url": "character-4-normal.png",
+            "activeUrl": "character-4-active.png"
+        }
+    ],
+    "levels": [
+        {
+            "level": 1,
+            "timeStepPercentage": 10
+        },
+        {
+            "level": 2,
+            "timeStepPercentage": 15
+        },
+        {
+            "level": 3,
+            "timeStepPercentage": 20
+        },
+        {
+            "level": 4,
+            "timeStepPercentage": 25
+        },
+        {
+            "level": 5,
+            "timeStepPercentage": 30
+        },
+        {
+            "level": 6,
+            "timeStepPercentage": 35
+        },
+        {
+            "level": 7,
+            "timeStepPercentage": 40
+        },
+        {
+            "level": 8,
+            "timeStepPercentage": 45
+        },
+        {
+            "level": 9,
+            "timeStepPercentage": 50
+        },
+        {
+            "level": 10,
+            "timeStepPercentage": 55
+        },
+        {
+            "level": 11,
+            "timeStepPercentage": 60
+        },
+        {
+            "level": 12,
+            "timeStepPercentage": 65
+        },
+        {
+            "level": 13,
+            "timeStepPercentage": 70
+        },
+        {
+            "level": 14,
+            "timeStepPercentage": 75
+        },
+        {
+            "level": 15,
+            "timeStepPercentage": 80
+        }
+        
+    ]
+    
+}

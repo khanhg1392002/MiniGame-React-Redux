@@ -1,0 +1,613 @@
+/* Đường dẫn tới file font, tuỳ thuộc vào cấu trúc thư mục của dự án của bạn */
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../assets/fonts/Pacifico.ttf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+button:focus {
+  outline: none;
+}
+
+.header-site {
+  height: 10vh;
+  background-color: transparent;
+}
+
+#header-navbar {
+  font-family: "Pacifico", sans-serif;
+  font-size: 24px;
+}
+
+.header-item-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* Reset CSS */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(221, 221, 221);
+  box-sizing: border-box;
+  /* width: 100vw;
+  height: 100vh; */
+  background-size: cover;
+  background-image: url('../assets/img/general/bg-body.jpg');
+  -webkit-user-drag: none;
+}
+
+/* Reset cho các phần tử block */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, figure, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset cho các phần tử inline */
+a, span, strong, em, b, i, u {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Tool bar */
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+  cursor: pointer;
+}
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.icon-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+.icon-button:hover .icon-img {
+  transform: scale(1.1);
+}
+
+
+
+/* .header-item-list{
+  display:flex;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+} */
+
+.header-site {
+  height: 10vh;
+  background-color: transparent;
+  padding-left: 200px;   
+  padding-right: 200px;  
+}
+
+/* .header-navbar {
+  font-family: "Pacifico", sans-serif;
+  font-size: 24px;
+} */
+
+/* .nav{
+  gap: 20px;
+} */
+
+.header-item-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.takashimaya-header-logo {
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.takashimaya-header-logo img {
+  width: 100%;
+}
+
+/* .nav-link {
+  color: #222;
+}
+
+.nav-link:hover {
+  color: #ef1c24;
+}
+
+.header-item-active {
+  color: #ef1c24;
+} */
+
+/* CSS cho button-menu */
+.button-menu {
+  background-color: rgba(0, 123, 255, 0); /* Màu nền với độ trong suốt */
+  color: black; /* Màu chữ của button */
+  border: none; /* Bỏ viền */
+  cursor: pointer; /* Con trỏ chuột thành hình tay */
+  transition: color 0.3s, background-color 0.3s; /* Hiệu ứng chuyển đổi */
+  font-size: 30px;
+  gap: 50px;
+  font-family: 'Pacifico', Arial, sans-serif;
+}
+
+.button-menu:hover {
+  color: #dc3545; /* Màu chữ khi hover */
+}
+
+/* CSS cho frame-grid */
+.frame-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CSS cho left-side và right-side */
+.left-side2, .right-side2 {
+  padding: 20px;
+  
+}
+
+.right-side2 {
+  display: flex;
+  justify-content: flex-end; /* Các button được căn cách nhau về bên phải */
+  gap: 20px;
+}
+
+.product-container{
+  display: flex;
+  justify-content: center; /* Để căn giữa ngang */
+  gap: 30px; /* Khoảng cách giữa các sản phẩm */
+}
+
+.product {
+  padding: 14px 24px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.product-text{
+  display: flex;
+  justify-content: center; /* Để căn giữa ngang */
+  gap: 150px; /* Khoảng cách giữa các sản phẩm */
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.character-container{
+  display: flex;
+  justify-content: center; /* Để căn giữa ngang */
+  gap: 7px; /* Khoảng cách giữa các sản phẩm */
+  margin-top: 15px;
+}
+
+.character {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.level-text {
+  margin-left: 70px;
+  margin-top: -20px;
+  font-weight: bold;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------k */
+
+.play-page-main-bottom-site {
+  height: 90vh;
+  padding-left: 200px;   
+  padding-right: 200px;  
+}
+
+.primary-button {
+  background: linear-gradient(180deg, rgb(255, 80, 80) 0%, rgb(211, 0, 0) 100%);
+  box-shadow: 2px -2px 10px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 42px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 12px solid #fff;
+  color: #fff;
+}
+
+.primary-button a {
+  display: block;
+  color: #fff;
+}
+
+.primary-button:hover {
+  background: linear-gradient(0deg, rgb(255, 80, 80) 0%, rgb(211, 0, 0) 100%);
+  color: #fff;
+}
+
+.primary-button a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.play-page-content {
+  height: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/general/bg-page-content.png");
+  border-radius: 20px;
+}
+
+.play-page-content .main-bottom-content-row {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.play-top-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  flex-wrap: nowrap;
+
+}
+
+.timer-site {
+  background: url("../assets/img/play-page/time-site.png") no-repeat;
+  width: 307px;
+  height: 86px;
+  padding: 32px 14px 0 70px;
+}
+
+.timer-range {
+  height: 22px;
+  background: url("../assets/img/play-page/time-range.png") repeat-x;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.level-site {
+  color: #ef1c24;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+.current-score {
+  height: 64px;
+  width: 203px;
+  background: url("../assets/img/play-page/scope.png") no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 64px;
+  border-radius: 28px;
+}
+
+.product-card-list {
+  width: 100%;
+  padding-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.product-card-img {
+  background-color: #fff;
+  height: 160px;
+  max-width: 160px;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  -ms-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 5px;
+}
+
+.product-card-name {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.game-content {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.false-clicked-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+}
+
+.false-clicked-img {
+  width: 50%;
+}
+
+.number-correct {
+  position: absolute;
+  background: url("../assets/img/play-page/number-correct.png") no-repeat;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  top: -24%;
+  left: 56%;
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.number-correct span:first-child {
+  font-family: "Quicksand", sans-serif;
+  color: #ef1c24;
+  font-size: 42px;
+  padding-top: 16px;
+}
+
+.number-correct span:nth-child(2) {
+  font-family: "Pacifico", sans-serif;
+  color: #ef1c24;
+  font-size: 72px;
+  padding-bottom: 12px;
+}
+
+.character-card-list {
+  width: 100%;
+  padding-top: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 8%; */
+}
+
+.character-card {
+  cursor: pointer;
+  height: 140px;
+}
+
+.character-1-card-active,
+.character-2-card-active,
+.character-3-card-active,
+.character-4-card-active {
+  display: none;
+}
+
+.character-list-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-correct {
+  position: absolute;
+  top: -36%;
+  right: 0;
+  width: 168px;
+  height: 177px;
+  background: url("../assets/img/play-page/name-correct.png") no-repeat;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 5;
+  /* display: none; */
+  align-items: center;
+  justify-content: center;
+}
+
+.name-correct-number,
+.name-correct-desc {
+  font-size: 16px;
+}
+
+.score-site {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.crown-img {
+  margin-right: 18px;
+}
+
+/* ------------------------------------------- Countdown Modal ------------------------------------------- */
+
+.modal-count-down {
+  background-color: transparent;
+  z-index: 2;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal-result-game {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 7;
+  display: none; 
+}
+.result-game-wrapper {
+  /* background-color: #ff0; */
+  background: url("../assets/img/register/Rectangle.png") no-repeat;
+  background-size: 100% 100%;
+  width: 824px;
+  height: 560px;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.result-game-header h2 {
+  color: #222;
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  transform: translateY(50%);
+}
+
+.result-game-header img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result-game-button-close {
+  background: url("../assets/img/register/btn-close.png") no-repeat 50%;
+  width: 94px;
+  height: 94px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  background-size: contain;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.result-game-button-close:hover {
+  filter: brightness(60%);
+}
+
+.modal-count-down>span {
+  color: #222;
+  text-align: center;
+  font-family: 'Pacifico', Arial, sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.count-down-text {
+  font-family: 'Pacifico', Arial, sans-serif;
+  font-size: 240px;
+  color: #222;
+  text-align: center;
+}
+
+.final-score-text {
+  color: #222;
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-size: 172px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 240px;
+}
+
+.welcome{
+  font-family: "Pacifico", sans-serif;
+  text-align: center;
+  font-size: 500%; 
+  padding-top: 250px;
+  display: none;
+}
+
+.welcome:hover {
+  color: #dc3545; /* Màu chữ khi hover */
+}
+
+.restart-game-text,
+.cancel-game-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.choices-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.choices-group button {
+  width: 47%;
+}
+

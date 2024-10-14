@@ -1,0 +1,28 @@
+/* Tool bar */
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .icon-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+
+  .icon-button:active {
+    transform: scale(0.90); /* Thu nhỏ thẻ khi nhấn */
+  }
+  

@@ -1,0 +1,77 @@
+/* Đường dẫn tới file font, tuỳ thuộc vào cấu trúc thư mục của dự án của bạn */
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../../../assets/fonts/Pacifico.ttf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+button:focus {
+    outline: none;
+}
+
+.header-site {
+    height: 10vh;
+    background-color: transparent;
+}
+
+#header-navbar {
+    font-family: "Pacifico", sans-serif;
+    font-size: 32px;
+}
+
+.header-item-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.takashimaya-header-logo {
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.takashimaya-header-logo img {
+    width: 100%;
+    -webkit-user-drag: none;
+}
+
+.nav-link:active {
+    transform: scale(0.96);
+    /* Thu nhỏ thẻ khi nhấn */
+}
+
+.nav-link {
+    color: #222;
+    padding: 12px;
+    position: relative;
+    display: inline-block;
+    /* font-size: 18px; */
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.nav-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #ef1c24;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: translateX(0);
+}
+
+.nav-link:hover {
+    color: #ef1c24;
+}

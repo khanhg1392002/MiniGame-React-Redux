@@ -1,0 +1,57 @@
+
+  .primary-button2 {
+    background: linear-gradient(180deg, rgb(255, 80, 80) 0%, rgb(211, 0, 0) 100%);
+    box-shadow: 2px -2px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border-radius: 42px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 8px;
+    border: 8px solid #fff;
+    color: #fff;
+    max-width: 300px;
+    max-height: 60px;
+    margin-top: 10px;
+  }
+
+  .primary-button2:active {
+    transform: scale(0.98); /* Thu nhỏ thẻ khi nhấn */
+  }
+  
+  .game-content {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .score-site {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .current-score {
+    height: 64px;
+    width: 203px;
+    background: url("/src/assets/img/play-page/scope.png") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 64px;
+    border-radius: 28px;
+  }
+
+
+  .score-site2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
